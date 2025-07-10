@@ -8,7 +8,6 @@ public class ElevatorController {
     }
 
     public void handleRequest(ElevatorRequest request) {
-        System.out.println("Handling request at floor " + request.getFloor());
         elevator.addRequest(request.getFloor());
     }
 
