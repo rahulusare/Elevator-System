@@ -1,4 +1,7 @@
-package com.rahul.elevator.ElevatorSystem;
+package com.rahul.elevator.controller;
+
+import com.rahul.elevator.model.ElevatorRequest;
+import com.rahul.elevator.service.Elevator;
 
 public class ElevatorController {
     private Elevator elevator;
@@ -8,11 +11,12 @@ public class ElevatorController {
     }
 
     public void handleRequest(ElevatorRequest request) {
+    	 System.out.println("\u001B[1m\u001B[32m ✔️ Received request for floor: \u001B[0m" + request.getFloor());
         elevator.addRequest(request.getFloor());
     }
 
     public void runElevator() {
-        elevator.move();
+        elevator.run();
     }
 }
 

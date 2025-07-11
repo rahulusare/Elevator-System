@@ -1,4 +1,4 @@
-package com.rahul.elevator.ElevatorSystem;
+package com.rahul.elevator.util;
 
 public class Utils {
 	
