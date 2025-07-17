@@ -14,7 +14,7 @@ public class SoundPlayer {
            
             clip.start();
             
-            Thread.sleep(2000);  
+            Thread.sleep(500);  
             clip.drain();
             clip.close();
             audioIn.close();
