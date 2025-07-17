@@ -67,52 +67,53 @@ mvn clean compile
 mvn exec:java -Dexec.mainClass="com.rahul.elevator.ElevatorSystem"
 
 🖥️ Sample Output
-mathematica
-Copy
-Edit
-Enter floor number 0 to 49 (-1 for Exit): 30
-✔️ Received request for floor: 30
-🔼 Going Up to: 30
-🔼 0
-🔼 1
-🔼 2
-🔼 3
-🔼 4
-🔼 5
-...
 
-✔️ Received request for floor: 20
-🔼 6
-🔼 7
-🔼 8
-...
-🔼 20
+========================================
+Enter floor number (0 to 100) or -1 to Exit
+To call elevator:
+  • For DOWN  =>  <floor_number
+  • For UP    =>  >floor_number
+========================================
+45
+ You Hava Entered : [0m45
+ 🔼 Going Up to: [0m45
+   🔼  0[0m
+   🔼  1[0m
+   🔼  2[0m
+>23   🔼  3[0m
+   🔼  4[0m
+   🔼  5[0m
 
-✔️ Received request for floor: 4
-🔼 13
-🔼 14
-...
-🔼 20
-
-✔️ Received request for floor: 23
-🚪 Door opening...
-🚪 Door closed
-⬅️ 21
-⬅️ 22
-
-✔️ Received request for floor: 4
-🚪 Door opening...
-🚪 Door closed
-⬇️ Going Down to: 4
-⬇️ 30
-⬇️ 29
-⬇️ 28
-⬇️ 27
-...
-⬇️ 5
-⬇️ 4
-🚪 Door opening...
-🚪 Door closed
+ ✔️ Received request for floor: [0m> 23
+   🔼  6[0m
+   🔼  7[0m
+    .
+    .
+    .
+    .
+    .
+    .
+   🔼 22[0m
+   🔼 23[0m
+ 🚪 Door opening... [0m
+ 🔒 Door closed [0m
+In_Requests_Pending: 0
+Out_Request_Pending: 0
+Current_Floor: 24
+   🔼 24[0m
+   🔼 25[0m
+    .
+    .
+    .
+    .
+    .
+   🔼 45[0m
+   🔼 44[0m
+ 🚪 Door opening... [0m
+ 🔒 Door closed [0m
+In_Requests_Pending: 0
+Out_Request_Pending: 0
+Current_Floor: 46
 
 
 
